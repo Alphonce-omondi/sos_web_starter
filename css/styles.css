@@ -1,0 +1,69 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+  
+  :root {
+    --col-primary: #b10400;
+    --col-grey: #181818;
+    --col-grey-dark: #333;
+    --col-black: #000;
+    --col-black-light: #222;
+    --col-white: #fff;
+  }
+  
+  body {
+    font-size: 1.5rem;
+    font-family: "Courier New", Courier, monospace;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--col-black-light);
+  }
+
+  .header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 2px solid #f2f2f2;
+  }
+
+  .header_title{
+    color: var(--col-primary);
+    font-size: 2.5rem;
+    text-transform: capitalize;
+  }
+
+  .nav-list{
+    list-style-type: none;
+    display: flex;
+  }
+
+  .nav-list-items{
+    padding: 2rem;
+    transition: all .8s;
+  }
+  .nav-list-items:hover{
+    background-color: var(--col-primary);
+    transform: rotate(5deg);
+  }
+  .nav-list-items :nth-child(even):hover{
+    transform: rotate(-5deg);
+  }
+
+  .nav-list-items a{
+    font-size: 2.0rem;
+    text-decoration: none;
+    color: var(--col-grey-dark);
+    font-weight: bold;
+
+  }
+
+  .nav-list-items:hover a{
+    color: var(--col-white);
+  }
